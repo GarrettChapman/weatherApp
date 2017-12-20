@@ -26,7 +26,11 @@ var vm = $scope;
 console.log(openWeatherURL);
 
     $http.get(openWeatherURL).then(function(data){
+<<<<<<< HEAD
       console.log(data);
+=======
+//       console.log(data);
+>>>>>>> d30988835fbfba98f3100e01d95a28e3d2e35011
       $scope.description = data.data.weather[0].description;
       $scope.speed = (2.237 * data.data.wind.speed).toFixed(1) + " mph";
       $scope.name= data.data.name;
@@ -34,6 +38,10 @@ console.log(openWeatherURL);
 
       $scope.fTemp=($scope.temp*(9/5)-459.67).toFixed(1) + ' (°F)';
       $scope.cTemp=($scope.temp-273).toFixed(1) + ' (°C)';
+<<<<<<< HEAD
+=======
+
+>>>>>>> d30988835fbfba98f3100e01d95a28e3d2e35011
         $scope.icon= "http://openweathermap.org/img/w/" + data.data.weather[0].icon + ".png";
 
         switch($scope.description){
@@ -79,6 +87,12 @@ console.log(openWeatherURL);
 
         }
 
+<<<<<<< HEAD
+=======
+
+      $scope.icon= "http://openweathermap.org/img/w/" + data.data.weather[0].icon + ".png";
+
+>>>>>>> d30988835fbfba98f3100e01d95a28e3d2e35011
     })
     .catch(function() {
   // handle errors
