@@ -71,6 +71,16 @@ console.log(openWeatherURL);
 
           }
 
+          case 'clear sky':{
+            $scope.weatherBackground = {
+              "background": "url('https://www.pexels.com/photo/blue-sky-blur-clear-sky-color-281260/')",
+              "background-size": "cover"
+
+            };
+            break;
+
+          }
+
 
 
 
