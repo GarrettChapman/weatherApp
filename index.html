@@ -16,6 +16,7 @@
 
   </head>
   <body ng-app="weatherApp" ng-controller='weatherCtrl' class= "text-center info" ng-style="weatherBackground">
+    <br>
 <h1>
 {{channelInfo.heading}}
 </h1>
@@ -31,6 +32,12 @@
  <br>
  <br>
 
+<h2>
+  {{name}}
+</h2>
+
+
+
 
 
 <a class="btn-primary btn-lg ">
@@ -38,30 +45,25 @@
 
 
 
-<a class="btn-lg btn-primary">
-{{speed}}
-</a>
-
-
-<a class="btn-lg btn-primary">
-{{name}}
-</a>
-
 <a class="btn-lg btn-primary" ng-init="tempVal=true" ng-show="tempVal" ng-click="tempVal=!tempVal">
 {{fTemp}}
 </a>
 
 <a class="btn-lg btn-primary" ng-show="!tempVal" ng-click="tempVal=!tempVal">
 
-<a class="btn-lg btn-primary">
-{{fTemp}}
-</a>
-
-<a class="btn-lg btn-primary">
 {{cTemp}}
 </a>
 
+<a class="btn-lg btn-primary">
+  Wind -
+{{speed}}
+</a>
 
+
+<a class="btn-lg btn-primary">
+  Humidity -
+  {{humidity}}
+</a>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
