@@ -49,7 +49,6 @@ console.log(openWeatherURL);
             $scope.weatherBackground = {
               "background": "url('https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg')",
               "background-size": "cover"
-
             };
             break;
           }
@@ -58,10 +57,18 @@ console.log(openWeatherURL);
             $scope.weatherBackground = {
               "background": "url('https://static.pexels.com/photos/459451/pexels-photo-459451.jpeg')",
               "background-size": "cover"
-
             };
             break;
 
+          }
+
+          case 'shower rain':{
+            $scope.weatherBackground = {
+              "background": "url('https://www.pexels.com/photo/close-up-rain-splash-water-81220/)",
+              "background-size": "cover"
+
+            };
+            break;
           }
 
           case 'scattered clouds':{
@@ -71,19 +78,44 @@ console.log(openWeatherURL);
 
             };
             break;
-
           }
 
-          case 'CLEAR SKY':{
+          case 'broken clouds':{
+            $scope.weatherBackground = {
+              "background": "url('https://images.pexels.com/photos/53594/blue-clhttps://www.pexels.com/photo/blue-cloudy-sky-86695/')",
+              "background-size": "cover"
+            };
+            break;
+
+          }
+        case 'few clouds': {
+          $scope.weatherBackground = {
+            "background": "url('https://www.pexels.com/photo/sky-sunny-clouds-cloudy-3768/')",
+            "background-size": "cover"
+
+          };
+          break;
+        }
+
+
+        case 'thunderstorm':{
+          $scope.weatherBackground = {
+            "background": "url('https://www.pexels.com/photo/blue-bright-danger-dark-268782/')",
+            "background-size": "cover"
+
+          };
+          break;
+        }
+
+
+          case 'clear sky':{
             $scope.weatherBackground = {
               "background": "url('https://www.pexels.com/photo/blue-sky-blur-clear-sky-color-281260/')",
               "background-size": "cover"
 
             };
             break;
-
           }
-
 
 
           case 'sunny':{
@@ -93,9 +125,7 @@ console.log(openWeatherURL);
 
             };
             break;
-
           }
-
 
 
             default:
