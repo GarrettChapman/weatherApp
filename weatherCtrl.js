@@ -8,6 +8,7 @@ var vm = $scope;
     heading: "Open Weather API ",
     subHeading1: "Your Local Weather",
 
+
   };
 
 
@@ -35,6 +36,8 @@ console.log(openWeatherURL);
       $scope.speed = (2.237 * data.data.wind.speed).toFixed(1) + " mph";
       $scope.name= data.data.name;
       $scope.temp= data.data.main.temp;
+      $scope.city = data.data.main.name;
+      $scope.humidity = data.data.main.humidity;
 
       $scope.fTemp=($scope.temp*(9/5)-459.67).toFixed(1) + ' (°F)';
       $scope.cTemp=($scope.temp-273).toFixed(1) + ' (°C)';
@@ -71,7 +74,7 @@ console.log(openWeatherURL);
 
           }
 
-          case 'clear sky':{
+          case 'CLEAR SKY':{
             $scope.weatherBackground = {
               "background": "url('https://www.pexels.com/photo/blue-sky-blur-clear-sky-color-281260/')",
               "background-size": "cover"
@@ -80,8 +83,6 @@ console.log(openWeatherURL);
             break;
 
           }
-
-
 
 
             default:
