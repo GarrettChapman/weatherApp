@@ -85,8 +85,7 @@ console.log(openWeatherURL);
           }
 
 
-<<<<<<< HEAD
-=======
+
           case 'sunny':{
             $scope.weatherBackground = {
               "background": "url('https://www.pexels.com/photo/sky-sunny-clouds-cloudy-3768/')",
@@ -98,7 +97,6 @@ console.log(openWeatherURL);
           }
 
 
->>>>>>> ebbe63821911264c8d79b0c08f55bb85734eaf7f
             default:
             $scope.weatherBackground= {
               "background": "url('https://static.pexels.com/photos/133953/pexels-photo-133953.jpeg')",
