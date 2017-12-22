@@ -82,6 +82,15 @@ console.log(openWeatherURL);
           }
 
 
+          case 'sunny':{
+            $scope.weatherBackground = {
+              "background": "url('https://www.pexels.com/photo/sky-sunny-clouds-cloudy-3768/')",
+              "background-size": "cover"
+
+            };
+            break;
+
+          }
 
 
             default:
