@@ -47,7 +47,7 @@ console.log(openWeatherURL);
         switch($scope.description){
           case 'mist':{
             $scope.weatherBackground = {
-              "background": "url('https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg')",
+              "background": "url('https://images.unsplash.com/photo-1444724334165-e7050f2229a1?auto=format&fit=crop&w=334&q=80')",
               "background-size": "cover"
             };
             break;
@@ -55,7 +55,7 @@ console.log(openWeatherURL);
 
           case 'rain':{
             $scope.weatherBackground = {
-              "background": "url('https://static.pexels.com/photos/459451/pexels-photo-459451.jpeg')",
+              "background": "url('https://images.unsplash.com/photo-1486016006115-74a41448aea2?auto=format&fit=crop&w=747&q=80')",
               "background-size": "cover"
             };
             break;
@@ -64,7 +64,7 @@ console.log(openWeatherURL);
 
           case 'shower rain':{
             $scope.weatherBackground = {
-              "background": "url('https://www.pexels.com/photo/close-up-rain-splash-water-81220/)",
+              "background": "url('https://images.unsplash.com/photo-1434118489318-42a0e62c6235?auto=format&fit=crop&w=667&q=80)",
               "background-size": "cover"
 
             };
@@ -73,7 +73,7 @@ console.log(openWeatherURL);
 
           case 'scattered clouds':{
             $scope.weatherBackground = {
-              "background": "url('https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb')",
+              "background": "url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=750&q=80')",
               "background-size": "cover"
 
             };
@@ -82,7 +82,7 @@ console.log(openWeatherURL);
 
           case 'broken clouds':{
             $scope.weatherBackground = {
-              "background": "url('https://images.pexels.com/photos/53594/blue-clhttps://www.pexels.com/photo/blue-cloudy-sky-86695/')",
+              "background": "url('https://images.unsplash.com/photo-1432059964050-d4eba2ef368a?auto=format&fit=crop&w=889&q=80')",
               "background-size": "cover"
             };
             break;
@@ -90,7 +90,16 @@ console.log(openWeatherURL);
           }
         case 'few clouds': {
           $scope.weatherBackground = {
-            "background": "url('https://www.pexels.com/photo/sky-sunny-clouds-cloudy-3768/')",
+            "background": "url('https://images.unsplash.com/photo-1505224526312-64368469c1f0?auto=format&fit=crop&w=334&q=80')",
+            "background-size": "cover"
+
+          };
+          break;
+        }
+
+        case 'overcast clouds': {
+          $scope.weatherBackground = {
+            "background": "url('https://images.unsplash.com/photo-1499956827185-0d63ee78a910?auto=format&fit=crop&w=750&q=80')",
             "background-size": "cover"
 
           };
@@ -100,7 +109,7 @@ console.log(openWeatherURL);
 
         case 'thunderstorm':{
           $scope.weatherBackground = {
-            "background": "url('https://www.pexels.com/photo/blue-bright-danger-dark-268782/')",
+            "background": "url('https://images.unsplash.com/photo-1511289081-d06dda19034d?auto=format&fit=crop&w=338&q=80')",
             "background-size": "cover"
 
           };
@@ -110,7 +119,7 @@ console.log(openWeatherURL);
 
           case 'clear sky':{
             $scope.weatherBackground = {
-              "background": "url('https://www.pexels.com/photo/blue-sky-blur-clear-sky-color-281260/')",
+              "background": "url('https://images.unsplash.com/photo-1490194490614-689f9bf126b0?auto=format&fit=crop&w=334&q=80')",
               "background-size": "cover"
 
             };
@@ -120,7 +129,7 @@ console.log(openWeatherURL);
 
           case 'sunny':{
             $scope.weatherBackground = {
-              "background": "url('https://www.pexels.com/photo/sky-sunny-clouds-cloudy-3768/')",
+              "background": "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=889&q=80')",
               "background-size": "cover"
 
             };
