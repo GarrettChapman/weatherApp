@@ -11,6 +11,15 @@ var vm = $scope;
 
   };
 
+// $http.get('http://ip-api.com/json').then(function(data){
+//   $scope.lat = data.data.lat;
+//   $scope.lon = data.data.lon;
+//
+//   var apiKey2 = "7208bd19fb5457c0fd0dc403ca2594e6";
+//
+//   var openWeather5Day =
+//   "http://api.openweathermap.org/data/2.5/forecast?lat=" $scope.lat + "&lon="+$scope.lon+ "&appid=" +apiKey2;
+// })
 
 
   $http.get("http://ip-api.com/json").then(function(data){
