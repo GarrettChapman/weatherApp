@@ -47,7 +47,7 @@ console.log(openWeatherURL);
         switch($scope.description){
           case 'mist':{
             $scope.weatherBackground = {
-              "background": "url('https://images.unsplash.com/photo-1444724334165-e7050f2229a1?auto=format&fit=crop&w=334&q=80')",
+              "background": "url('https://images.unsplash.com/photo-1438803235109-d737bc3129ec?auto=format&fit=crop&w=1332&q=80')",
               "background-size": "cover"
             };
             break;
