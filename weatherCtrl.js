@@ -11,6 +11,15 @@ var vm = $scope;
 
   };
 
+// $http.get('http://ip-api.com/json').then(function(data){
+//   $scope.lat = data.data.lat;
+//   $scope.lon = data.data.lon;
+//
+//   var apiKey2 = "7208bd19fb5457c0fd0dc403ca2594e6";
+//
+//   var openWeather5Day =
+//   "http://api.openweathermap.org/data/2.5/forecast?lat=" $scope.lat + "&lon="+$scope.lon+ "&appid=" +apiKey2;
+// })
 
 
   $http.get("http://ip-api.com/json").then(function(data){
@@ -47,7 +56,7 @@ console.log(openWeatherURL);
         switch($scope.description){
           case 'mist':{
             $scope.weatherBackground = {
-              "background": "url('https://images.unsplash.com/photo-1444724334165-e7050f2229a1?auto=format&fit=crop&w=334&q=80')",
+              "background": "url('https://unsplash.com/photos/EPmvy-Ql4U0')",
               "background-size": "cover"
             };
             break;
