@@ -128,7 +128,7 @@ console.log(openWeatherURL);
 
           case 'clear sky':{
             $scope.weatherBackground = {
-              "background": "url('https://images.unsplash.com/photo-1490194490614-689f9bf126b0?auto=format&fit=crop&w=334&q=80')",
+              "background": "url('https://images.unsplash.com/photo-1483794888112-717b8eb1e833?auto=format&fit=crop&w=334&q=80')",
               "background-size": "cover"
 
             };
