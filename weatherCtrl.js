@@ -60,6 +60,7 @@ console.log(openWeatherURL);
               "background-size": "cover"
             };
             break;
+
           }
 
           case 'light rain':{
@@ -68,6 +69,8 @@ console.log(openWeatherURL);
               "background-size": "cover"
             };
             break;
+
+          }
 
           case 'rain':{
             $scope.weatherBackground = {
