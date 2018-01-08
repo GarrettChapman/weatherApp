@@ -62,6 +62,13 @@ console.log(openWeatherURL);
             break;
           }
 
+          case 'light rain':{
+            $scope.weatherBackground = {
+              "background": "url('https://images.unsplash.com/photo-1420496854436-ae64eb61e937?auto=format&fit=crop&w=800&q=80')",
+              "background-size": "cover"
+            };
+            break;
+
           case 'rain':{
             $scope.weatherBackground = {
               "background": "url('https://images.unsplash.com/photo-1486016006115-74a41448aea2?auto=format&fit=crop&w=747&q=80')",
@@ -165,6 +172,16 @@ console.log(openWeatherURL);
   // handle errors
     });
   });
+
+  // $http.get('http://ip-api.com/json').then(function(data){
+  //   $scope.lat = data.data.lat;
+  //   $scope.lon = data.data.lon;
+  //
+  //   var apiKey2 = "7208bd19fb5457c0fd0dc403ca2594e6";
+  //
+  //   var openWeather5Day =
+  //   "http://api.openweathermap.org/data/2.5/forecast?lat=" $scope.lat + "&lon="+$scope.lon+ "&appid=" +apiKey2;
+  // })
 
 });
 
