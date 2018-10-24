@@ -1,10 +1,10 @@
 angular.module('weatherApp').controller('weatherCtrl', function($scope, $http){
 
-var vm = $scope;
+// var vm = $scope;
 
-  vm.test = 'most triumphant';
+  $scope.test = 'most triumphant';
 
-  vm.channelInfo = {
+  $scope.channelInfo = {
     heading: "Open Weather API ",
     subHeading1: "Your Local Weather",
 
@@ -68,6 +68,7 @@ console.log(openWeatherURL);
               "background-size": "cover"
             };
             break;
+          }
 
           case 'rain':{
             $scope.weatherBackground = {
@@ -75,14 +76,12 @@ console.log(openWeatherURL);
               "background-size": "cover"
             };
             break;
-
           }
 
           case 'shower rain':{
             $scope.weatherBackground = {
               "background": "url('https://images.unsplash.com/photo-1434118489318-42a0e62c6235?auto=format&fit=crop&w=667&q=80)",
               "background-size": "cover"
-
             };
             break;
           }
@@ -91,7 +90,6 @@ console.log(openWeatherURL);
             $scope.weatherBackground = {
               "background": "url('https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?auto=format&fit=crop&w=750&q=80')",
               "background-size": "cover"
-
             };
             break;
           }
@@ -102,13 +100,12 @@ console.log(openWeatherURL);
               "background-size": "cover"
             };
             break;
-
           }
+
         case 'few clouds': {
           $scope.weatherBackground = {
             "background": "url('https://images.unsplash.com/photo-1505224526312-64368469c1f0?auto=format&fit=crop&w=334&q=80')",
             "background-size": "cover"
-
           };
           break;
         }
@@ -117,7 +114,6 @@ console.log(openWeatherURL);
           $scope.weatherBackground = {
             "background": "url('https://images.unsplash.com/photo-1499956827185-0d63ee78a910?auto=format&fit=crop&w=750&q=80')",
             "background-size": "cover"
-
           };
           break;
         }
@@ -127,7 +123,6 @@ console.log(openWeatherURL);
           $scope.weatherBackground = {
             "background": "url('https://images.unsplash.com/photo-1511289081-d06dda19034d?auto=format&fit=crop&w=338&q=80')",
             "background-size": "cover"
-
           };
           break;
         }
@@ -137,7 +132,6 @@ console.log(openWeatherURL);
             $scope.weatherBackground = {
               "background": "url('https://images.unsplash.com/photo-1483794888112-717b8eb1e833?auto=format&fit=crop&w=334&q=80')",
               "background-size": "cover"
-
             };
             break;
           }
@@ -147,7 +141,6 @@ console.log(openWeatherURL);
             $scope.weatherBackground = {
               "background": "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=889&q=80')",
               "background-size": "cover"
-
             };
             break;
           }
@@ -158,9 +151,7 @@ console.log(openWeatherURL);
               "background": "url('https://static.pexels.com/photos/133953/pexels-photo-133953.jpeg')",
               "background-size": "cover"
             };
-
             break;
-
         }
 
 
@@ -189,7 +180,7 @@ console.log(openWeatherURL);
 // var classApp = angular.module('weatherApp', []);
 //
 //
-// classApp.controller('weatherCtrl', function(vm){
+// classApp.controller('weatherCtrl', function($scope){
 //   var vm = vm;
 //
 //   vm.test = "most triumphant"
